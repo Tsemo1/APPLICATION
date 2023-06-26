@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assogym.view.acceuil.ViewAcceuilCombo">
+   <children>
+      <HBox alignment="CENTER" prefHeight="500.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="498.0" prefWidth="700.0">
+               <children>
+                  <ImageView fitHeight="500.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/acceuil.jpg" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutY="102.0" prefHeight="398.0" prefWidth="132.0" style="-fx-background-color: transparent;">
+                     <children>
+                        <Button fx:id="user" mnemonicParsing="false" onAction="#user" prefHeight="43.0" prefWidth="132.0" style="-fx-background-color: BADAF0;" text="utilisateurs ">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="18.0">
+                                 <image>
+                                    <Image url="@../../images/user_24px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="event" layoutY="68.0" mnemonicParsing="false" onAction="#event" prefHeight="43.0" prefWidth="132.0" style="-fx-background-color: BADAF0;" text="évènements">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="18.0">
+                                 <image>
+                                    <Image url="@../../images/two_tickets_24px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="plan" layoutY="136.0" mnemonicParsing="false" onAction="#plan" prefHeight="43.0" prefWidth="132.0" style="-fx-background-color: BADAF0;" text="planning     ">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="18.0">
+                                 <image>
+                                    <Image url="@../../images/event_24px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="story" layoutY="205.0" mnemonicParsing="false" onAction="#story" prefHeight="43.0" prefWidth="132.0" style="-fx-background-color: BADAF0;" text="historique   ">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="18.0">
+                                 <image>
+                                    <Image url="@../../images/clock_24px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="setting" layoutY="274.0" mnemonicParsing="false" onAction="#setting" prefHeight="43.0" prefWidth="132.0" style="-fx-background-color: BADAF0;" text="paramètres  ">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="18.0">
+                                 <image>
+                                    <Image url="@../../images/settings_24px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="paneAcceuil" layoutX="144.0" layoutY="39.0" prefHeight="461.0" prefWidth="556.0" />
+                  <VBox alignment="CENTER" layoutX="16.0" layoutY="8.0" prefHeight="94.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fx:id="image" fitHeight="63.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="nom" alignment="CENTER" prefHeight="18.0" prefWidth="46.0">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Label fx:id="lbInterface" alignment="CENTER" layoutX="144.0" layoutY="21.0" prefHeight="18.0" prefWidth="525.0" styleClass="titre-vue" text="Acceuil" />
+                  <Button layoutX="633.0" layoutY="16.0" mnemonicParsing="false" onAction="#home" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <VBox prefHeight="0.0" prefWidth="14.0">
+                           <children>
+                              <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/home_24px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
